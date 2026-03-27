@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { Button } from './components/ui/button';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="font-bold p-4">
       <p>{message}</p>
+      <Button className="mt-4">Click Me now</Button>
     </div>
   );
 }

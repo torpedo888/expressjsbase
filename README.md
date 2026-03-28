@@ -29,23 +29,20 @@ cd expresstest
 bun install
 ```
 
+
 ### 3. Development
 
-#### Start the server
+#### Start both client and server together
+
+From the root directory, run:
 
 ```bash
-cd packages/server
-bun run dev
+bun dev
 ```
 
-#### Start the client
+This will start both the server and client concurrently.
 
-```bash
-cd packages/client
-bun run dev
-```
-
-The client will be available at [http://localhost:5173](http://localhost:5173) and will proxy API requests to the server at [http://localhost:3000](http://localhost:3000).
+- The client will be available at [http://localhost:5173](http://localhost:5173) and will proxy API requests to the server at [http://localhost:3000](http://localhost:3000).
 
 ---
 
